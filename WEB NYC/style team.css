@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html{
     scroll-behavior: smooth;
   }
@@ -42,6 +47,39 @@ html{
     margin-right: 16px;
     border: none;
     font-size: 17px;
+  }
+
+  .maps {
+    background-color: #002B4E;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .maps-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .jumbotron6 {
+    color: #f2f2f2;
+  }
+  
+  .jumbotron6 h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .jumbotron6 p2 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .row-limit {
+    margin-top: 20px;
+    text-align: center;
   }
   
   @media screen and (max-width: 600px) {
