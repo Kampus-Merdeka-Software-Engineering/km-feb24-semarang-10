@@ -318,6 +318,7 @@ function renderPieChart(ctx, labels, data, title = "Total Sales Price by Buildin
   });
 }
 
+// This is a function to render a horizontal bar chart
 function renderHorizontalBarChart(ctx, labels, data, title) {
   return new Chart(ctx, {
     type: 'bar',
