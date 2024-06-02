@@ -50,46 +50,6 @@ body{
   font-size: 17px;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-      display: none;
-  }
-
-  .topnav a.icon {
-      float: right;
-      display: block;
-  }
-
-  .topnav a, .topnav input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-  }
-
-  .topnav input[type=text] {
-      border: 1px solid #002B4E;
-  }
-
-  .topnav.responsive {
-      position: relative;
-  }
-
-  .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-  }
-
-  .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-  }
-}
-
 .jumbotron1 {
   display: flex;
   justify-content: center; /* Mengatur agar konten berada di tengah secara horizontal */
@@ -133,7 +93,6 @@ body{
   align-items: flex-start;
   text-align: left;
   margin-top: 70px;
-  margin-left: 100px;
   font-size: 40px;
 }
 
@@ -144,8 +103,6 @@ body{
   align-items: flex-start;
   text-align: left;
   margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 150px;
   font-size: 15px;
 }
 
@@ -212,7 +169,7 @@ body{
 
 .container1 .btn {
   display: inline-block;
-  padding: 10px 120px;
+  padding: 10px 50px;
   background-color: #002B4E;
   color: #ffffff;
   text-decoration: none;
@@ -492,3 +449,301 @@ body{
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+
+  .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+
+  .topnav input[type=text] {
+      border: 1px solid #002B4E;
+  }
+
+  .topnav.responsive {
+      position: relative;
+  }
+
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+  .jumbotron1, .jumbotron2, .jumbotron3, .jumbotron4, .jumbotron5, .jumbotron6 {
+    height: 800px; /* Mengatur tinggi jumbotron menjadi 400px */
+    width: 100%; /* Mengatur lebar jumbotron menjadi 100% */
+  }
+
+  .jumbotron1 img, .jumbotron2 img, .jumbotron3 img, .jumbotron4 img, .jumbotron5 img, .jumbotron6 img{
+    width: 100%; /* Mengatur lebar gambar menjadi 80% */
+    height: 100%; /* Mengatur tinggi gambar menjadi 80% */
+    margin: auto; /* Memposisikan gambar di tengah */
+    display: block; /* Memastikan gambar berada di tengah */
+    float: none;
+  }
+
+ .container2 img, .container4 img{
+    width: 80%; /* Mengatur lebar gambar menjadi 80% */
+    height: 35%; /* Mengatur tinggi gambar menjadi 80% */
+    margin: auto; /* Memposisikan gambar di tengah */
+    display: block; /* Memastikan gambar berada di tengah */
+    float: none;
+  }
+
+.jumbotron1 {
+  background-size: 100% 100%; /* Menyesuaikan ukuran gambar latar belakang */
+}
+.jumbotron1 img {
+  float: none;
+}
+.jumbotron1 .button-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.jumbotron1 p2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  /* margin-left: 100px; */
+  /* margin-right: 150px; */
+  font-size: 15px;
+}
+.jumbotron1 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 40px;
+  /* margin-left: 100px; */
+  font-size: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.container2 h1 {
+  position: static;
+  margin-bottom: 0;
+  display: block;
+}
+.container1 {
+  text-align: center; /* Menengahkan teks */
+  width: 100%;
+  padding: 0;
+}
+
+.container1 img {
+  width: 100%; /* Mengurangi lebar gambar */
+  height: auto; /* Menyesuaikan tinggi gambar */
+  margin: auto; /* Memposisikan gambar di tengah */
+  display: block; /* Memastikan gambar berada di tengah */
+  float: none; /* Menghapus float */
+}
+
+.container1 .button-container {
+  margin-top: 20px; /* Menyesuaikan margin atas tombol */
+  margin-left: auto; /* Menengahkan tombol secara horizontal */
+  margin-right: auto; /* Menengahkan tombol secara horizontal */
+  position: static; /* Mengembalikan posisi tombol menjadi statis */
+}
+
+.container2 p2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 0;
+  /* margin-right: 150px; */
+  font-size: 15px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+.container2 .button-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  text-align: center;
+}
+
+.container2 .btn {
+  width: auto; /* Ensure the button does not stretch too wide */
+  padding: 10px 60px; /* Adjust padding to fit the smaller screen better */
+}
+
+.container2 {
+  padding: 0 20px; /* Add padding to container to prevent overflow */
+}
+
+.container2 p1{
+  text-align: center; /* Center the text */
+  margin-left: auto; /* Ensure margins auto-adjust */
+  margin-right: auto;
+  margin-top: 20px;
+}
+.container2 p2 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sales {
+  margin-bottom: 50px;
+}
+.product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.container3 {
+  padding: 0 20px;
+}
+.container3 .row {
+  flex-direction: column; /* Stack the columns vertically on smaller screens */
+  align-items: center; /* Center the columns */
+  margin-top: 10px;
+}
+
+.container3 .column-content {
+  max-width: 100%; /* Make the columns take up full width */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container3 .button-container {
+  text-align: center; /* Center-align buttons on smaller screens */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  text-align: center;
+}
+.container3 .btn {
+  padding: 20px 50px;
+  width: auto;
+}
+.column-content img {
+  width: 70%;
+  height: auto;
+  margin: auto; /* Memposisikan gambar di tengah */
+  display: block; /* Memastikan gambar berada di tengah */
+  float: none; /* Menghapus float */
+}
+.container4 .custom-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #002B4E;
+  border-radius: 0;
+  box-shadow: none;
+}
+.container4 .custom-card img {
+  margin-bottom: 10px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 50%;
+  /* flex-direction: column; */
+}
+.container4 .custom-card p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  color: #ffffff;
+}
+.container4 .custom-card h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 100px; */
+  font-size: 40px;
+  color: #ffffff;
+}
+.container4 .custom-card .button-container {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jumbotron6 {
+  width: 100%;
+  height: 180px;
+}
+.maps {
+  background-color: #002B4E;
+  text-align: center;
+  padding: 10px;
+}
+.container4 .custom-card-body {
+  padding: 0;
+}
+.container4 .custom-card .button-container {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.container4 .custom-card .btn {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: #ffffff;
+  color: #002B4E;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+}
