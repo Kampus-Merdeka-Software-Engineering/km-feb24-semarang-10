@@ -241,6 +241,8 @@ function renderBarChart(ctx, labels, data, title = "Sales Price") {
       ],
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true,
@@ -273,6 +275,8 @@ function renderLineChart(ctx, labels, data, title = "Total Transactions per Mont
       }]
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true,
@@ -305,6 +309,8 @@ function renderPieChart(ctx, labels, data, title = "Total Sales Price by Buildin
       }]
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: {
           position: "bottom",
@@ -332,6 +338,8 @@ function renderHorizontalBarChart(ctx, labels, data, title) {
       }]
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       indexAxis: 'y', // This is what makes the bar chart horizontal
       scales: {
         x: {
