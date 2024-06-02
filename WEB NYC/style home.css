@@ -473,7 +473,7 @@ body{
   }
 
   .topnav.responsive {
-      position: relative;
+      position: fixed;
   }
 
   .topnav.responsive .icon {
