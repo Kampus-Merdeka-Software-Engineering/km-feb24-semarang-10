@@ -24,12 +24,14 @@
 
 <!-- navbar end -->
 <div class="content">
-    <h1 class="dashboard-title">NYC Sales Dashboard</h1>
-    <div>
+    <h1 class="dashboard-title">NYC PROPERTY SALES DASHBOARD</h1>
+    <div class="sel">
+      <label>Filter by Year:</label>
     <select name="year" id="year" class="year-select" style="margin-bottom: 1rem;">
       <option value="">Select Year</option>
     </select>
-    </div>
+  </div>
+
     <div class="container">
       <div class="wrapper">
         <div class="card">
@@ -60,26 +62,38 @@
     </div>
     <div class="box-container">
       <div class="box" id="box1">
+        <div class="box-wrapper">
         <canvas id="chart-3"></canvas>
+        </div>
       </div>
       <div class="box" id="box2">
+        <div class="box-wrapper">
         <canvas id="chart-1"></canvas>
+        </div>
       </div>
     </div>
     <div class="box-container">
       <div class="box" id="box3">
+        <div class="box-wrapper">
         <canvas id="chart-2"></canvas>
+        </div>
       </div>
       <div class="box" id="box4">
+        <div class="box-wrapper">
         <canvas id="chart-4"></canvas>
+        </div>
       </div>
     </div>
     <div class="box-container">
       <div class="box-1" id="box5">
+        <div class="box-wrapper">
         <canvas id="chart-5"></canvas>
+        </div>
       </div>
       <div class="box" id="box6">
+        <div class="box-wrapper">
         <canvas id="chart-6"></canvas>
+        </div>
       </div>
     </div>
   </div>
