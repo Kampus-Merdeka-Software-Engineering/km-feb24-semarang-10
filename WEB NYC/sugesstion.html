@@ -26,23 +26,24 @@
     <div class="suggestion">
         <div class="container4">
             <h1 >SUGGESTION!</h1>
-            <p>Your comments will help us to be even better</p>
-                    <form method="get" action="https://www.google.com/" onsubmit="return cekform();" class="custom-form">
+            <p>Help Us for Improvement!</p>
+                    <form method="get" onsubmit="return cekform();" class="custom-form">
                         <div class="form-group">
-                            <label for="nrp">Nama</label>
+                            <label for="nama">Nama</label>
                             <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" class="form-control">
                             <h5 style="color: #F1F6FA;" id="errornama"></h5>
                     
-                            <label for="nohp">Email</label>
+                            <label for="email">Email</label>
                             <input type="text" id="email" name="email" placeholder="Masukkan Email Anda" class="form-control">
                             <h5 style="color: #F1F6FA" id="erroremail"></h5>
 
-                            <label for="nohp">Comment</label>
+                            <label for="comment">Comment</label>
                             <input type="text" id="comment" name="comment" placeholder="Masukkan Comment Anda" class="form-control">
                             <h5 style="color: #F1F6FA;" id="errorcomment"></h5>
                         </div>  
                         <input type="submit" class="btn btn-success" value="SIMPAN">
-                    </form>      
+                    </form>   
+                    <div id="responseMessage" style="display: none; color: green;">Jawaban Anda Tersimpan, Terima kasih telah memberikan kami feedback!</div>   
             </div>
         </div>
     </div>
@@ -69,6 +70,44 @@
                 x.className = "topnav";
             }
         }  
+
+        function cekform() {
+        var nama = document.getElementById('nama').value;
+        var email = document.getElementById('email').value;
+        var comment = document.getElementById('comment').value;
+
+        // Validasi nama  huruf
+        var regexNama = /^[a-zA-Z\s]*$/;
+        if (!regexNama.test(nama)) {
+            document.getElementById('responseMessage').innerText = "Nama hanya boleh diisi dengan huruf!";
+            document.getElementById('responseMessage').style.color = 'red';
+            document.getElementById('responseMessage').style.display = 'block';
+            return false;
+        }
+
+        // Validasi max 200 kata 
+        var words = comment.trim().split(/\s+/);
+        if (words.length > 200) {
+            document.getElementById('responseMessage').innerText = "Komentar maksimal 200 kata!";
+            document.getElementById('responseMessage').style.color = 'red';
+            document.getElementById('responseMessage').style.display = 'block';
+            return false;
+        }
+
+        // Validasi semua diisi
+        if (nama === "" || email === "" || comment === "") {
+            document.getElementById('responseMessage').innerText = "Silakan lengkapi data di atas!";
+            document.getElementById('responseMessage').style.color = 'red';
+            document.getElementById('responseMessage').style.display = 'block';
+            return false;
+        } else {
+            document.getElementById('responseMessage').innerText = "Jawaban Anda Tersimpan, Terima kasih telah memberikan Mata Rakyat feedback!";
+            document.getElementById('responseMessage').style.color = 'green';
+            document.getElementById('responseMessage').style.display = 'block';
+            return true;
+        }
+    }
+
     </script>
 
 </body>
