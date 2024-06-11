@@ -85,7 +85,7 @@
             return false;
         }
 
-        // Validasi max 200 kata 
+        // Validasi max 100 kata 
         var words = comment.trim().split(/\s+/);
         if (words.length > 100) {
             document.getElementById('responseMessage').innerText = "Komentar maksimal 200 kata!";
